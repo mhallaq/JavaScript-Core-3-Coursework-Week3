@@ -70,3 +70,11 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+const namesObject = hogwarts
+  .filter((person) => person.house == "Gryffindor")
+  .map((person) => person.firstName + " " + person.lastName);
+
+console.log(namesObject);
+
+// names;
