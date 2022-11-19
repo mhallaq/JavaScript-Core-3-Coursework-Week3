@@ -77,4 +77,8 @@ const namesObject = hogwarts
 
 console.log(namesObject);
 
-// names;
+const teacherHavePet = hogwarts
+  .filter((person) => person.occupation === "Teacher" && person.pet)
+  .map((person) => person.firstName + " " + person.lastName);
+
+console.log(teacherHavePet);
